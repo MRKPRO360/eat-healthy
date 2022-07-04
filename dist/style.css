@@ -5,7 +5,6 @@
 --clr-tertiary: #b3b1b1;
 --clr-black: #000;
 --clr-white: #fff;
-
 }
 
 * {
@@ -22,6 +21,7 @@ body {
     font-family: "Poppins", sans-serif;
     color: var(--clr-secondary);
     line-height: 1.6;
+    box-sizing: border-box;
 }
 
 img {
@@ -40,8 +40,6 @@ img {
 
 }
 
-
-
 .flex > * {
     flex: 1 1 50%;
 }
@@ -49,6 +47,7 @@ img {
 .px-1 {
 padding: 0 10rem;
 }
+
 
 .heading-1 {
     font-size: 6rem;
@@ -58,10 +57,19 @@ padding: 0 10rem;
     font-size: 4rem;
 }
 
+.heading-3 {
+    font-size: 3.5rem;
+}
+
 .paragraph {
     font-size: 1.6rem;
     color: var(--clr-black);
 }
+
+.shadow {
+    box-shadow: 0 0 6rem var(--clr-tertiary);
+}
+
 
 .btn:link,
 .btn:visited {
@@ -73,7 +81,7 @@ padding: 0 10rem;
     padding: 1.5rem 3rem;
     background-image: linear-gradient(to right bottom, var(--clr-primary-light), var(--clr-primary-dark));
     border-radius: 4rem;
-    box-shadow: 0 0 3rem 1px var(--clr-primary-light);
+    box-shadow: 0 0 3rem 1px var(--clr-tertiary);
 }
 
 .hero__text-container {
@@ -96,7 +104,7 @@ padding: 0 10rem;
     content: '';
     position: absolute;
     top:-2%;
-    left:-43%;
+    left:-50%;
     width: 100%;
     height: 100%;
     background-image: url(./../images/male/Hero_Image-removebg-preview.png);
@@ -108,8 +116,8 @@ padding: 0 10rem;
 .hero__img-container::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: -15%;
+    top: 1%;
+    left: -24%;
     width: 100%;
     height: 100%;
     background-image: url(./../images/shapes/Group\ 8449.png);
@@ -152,3 +160,63 @@ padding: 0 10rem;
     margin-bottom: 10rem;
 }
 
+.recipe__heading {
+    margin: 6rem 0 4rem;
+}
+
+.recipe__heading, .recipe__text {
+    text-align: center;
+}
+
+.recipe__text {
+    width: 43%;
+    margin: auto;
+}
+
+.recipe__card-container {
+    margin: 2rem 0 5rem;
+    gap: 1.5rem;
+}
+
+.recipe__card {
+    padding: 2rem 2rem 4rem;
+    border-radius: 2rem;
+}
+
+.recipe__card-img {
+    height: 40rem;
+    object-fit: cover;
+    padding: 1rem 1rem 2rem 0;
+    border-radius: 3rem;
+}
+
+.recipe__card-heading{
+    margin-bottom: 1rem;
+    color: var(--clr-black);
+}
+
+.recipe-stats-container {
+    border-radius: 2rem;
+    margin: 10rem;    
+}
+
+.recipe-stats {
+    padding: 6rem 12rem;
+}
+
+.recipe-stats__heading {
+    color: var(--clr-black);
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    background-color: var(--clr-black);
+    padding: 6rem 10rem;
+}
+
+.footer__description {
+    margin-top: 4rem;
+    color: var(--clr-tertiary);
+    font-size: 1.6rem;
+}
